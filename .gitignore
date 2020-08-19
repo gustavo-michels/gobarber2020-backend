@@ -5,6 +5,11 @@ dist/
 build/
 temp/
 coverage/
+.env
+ormconfig.json
 
 tmp/*
-!tmp/.gitkeep
+!tmp/.gitignore
+!tmp/uploads
+tmp/uploads/*
+!tmp/uploads/.gitkeep
