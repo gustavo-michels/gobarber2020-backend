@@ -69,6 +69,7 @@ class UpdateProfileService {
     }
 
     await this.cacheProvider.invalidatePrefix('providers-list');
+    await this.cacheProvider.invalidatePrefix('provider-appointments');
 
     return this.usersRepository.update(user);
   }
